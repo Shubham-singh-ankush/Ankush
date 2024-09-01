@@ -1,0 +1,356 @@
+.disblock {
+  display: flex !important;
+}
+.bottombg {
+  padding: 8px 0px 8px 10px;
+  color: #fff;
+  background: #04498c;
+}
+.bottombg h6 {
+  margin: 0px;
+}
+.bottomb {
+  margin-top: 40px;
+}
+.inputtext {
+  border-bottom: 0.86px solid #c2c2c2;
+  border-right: none;
+  width: 100%;
+  padding: 7px;
+  border-left: none;
+  border-top: 0.86px solid #c2c2c2;
+}
+.dashboard {
+  margin: 20px 0px 0px 10px;
+  padding: 10px 20px 0px;
+  height: 82vh !important;
+  overflow: auto;
+}
+.accordion-item {
+  border-radius: 5px;
+  border: none !important;
+  margin-bottom: 28px;
+}
+.accordion-body h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #464646;
+}
+.accordion-body h5 {
+  font-size: 17px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-weight: 500 !important;
+  line-height: 27px !important;
+  text-align: left;
+  color: #464646ca !important;
+}
+.accordion-body {
+  padding: 30px 5px 20px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+}
+.dashboardbg .accordion-button::after {
+  background-image: url("/images/admindown.png") !important;
+  background-size: 80% !important;
+}
+
+.dashboardbg .accordion-button:not(.collapsed)::before {
+  background-image: url("/images/adminup.png") !important;
+  background-size: 80%;
+}
+.accordion-item h2 button {
+  font-size: 20px;
+  box-shadow: 0px 2px 7px 0px #33333340 !important;
+  font-weight: 600;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: left;
+  color: #04498c;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e4e4e4 !important;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #04498c;
+  height: 250px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.uploadbox {
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border: 0.86px solid #c2c2c2;
+  border-radius: 3px;
+}
+.imgbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.imgbox img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+/* here is the css of foter css */
+.iconupdate {
+  position: relative;
+}
+.iconupdate::after {
+  content: "";
+  background-image: url(/images/upload-icon.png);
+  position: absolute;
+  height: 25px;
+  right: 30px;
+  background-size: contain;
+  width: 25px;
+  top: 10px;
+  background-repeat: no-repeat;
+}
+
+.footerbtn {
+  display: flex;
+  padding: 25px 0px;
+  justify-content: flex-end;
+}
+.btntrnprt {
+  border: 2px solid #04498c !important;
+  color: #04498c;
+  margin-right: 15px;
+  margin-left: 25px;
+  font-size: 15px;
+  border-radius: 5px !important;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  background: transparent !important;
+  padding: 5px 30px;
+}
+.btnblue {
+  background: #04498c;
+  color: #fff;
+  border: 2px solid #04498c !important;
+  font-size: 15px;
+  padding: 5px 30px;
+  border-radius: 5px !important;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+#checkbox {
+  height: 21px;
+  border: 2px solid red;
+  padding: 5px;
+  width: 21px;
+}
+.imgbox input#formFile {
+  border: none !important;
+  height: 120px;
+  top: 0px;
+  position: absolute;
+  opacity: 0;
+  background: transparent !important;
+}
+@media (max-width: 767px) {
+  .headermain {
+    padding: 10px !important;
+  }
+  .inputhead {
+    width: 100px !important;
+  }
+  .adminame p {
+    text-align: start !important;
+  }
+  .sidebar a {
+    padding: 14px 13px !important;
+  }
+  .sidebar.open {
+    width: 230px !important;
+  }
+  .sidebar.closed {
+    width: 70px !important;
+    padding: 14px 7px 80px !important;
+  }
+  .sidebar-header {
+    padding: 17px 5px 20px !important;
+  }
+  .dashboardbg {
+    margin-left: 60px !important;
+    width: 340px !important;
+  }
+  .footerbtn {
+    display: flex;
+    padding: 0px 0px 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkbox {
+    margin-bottom: 15px;
+  }
+  .btntrnprt {
+    margin-left: 0px;
+  }
+  .accordion-item h2 button {
+    font-size: 16px;
+  }
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  .disblock {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar.closed {
+    width: 100px !important;
+    padding: 20px 20px 80px !important;
+  }
+  .dashboardbg {
+    margin-left: 130px !important;
+    width: 600px !important;
+  }
+  .headermain {
+    padding: 10px 18px !important;
+  }
+  .sidebar {
+    padding: 10px 2px 80px !important;
+  }
+  .sidebar.open {
+    width: 230px !important;
+  }
+  .dashboardclose {
+    margin-left: 240px !important;
+    width: 500px !important;
+  }
+  .adminame p {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 710px !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 790px !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 940px !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 1030px !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 940px !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 1040px !important;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1439px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 1040px !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 1140px !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1450px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 1100px !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 1190px !important;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1679px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 79% !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 84% !important;
+  }
+}
+@media (min-width: 1680px) and (max-width: 1920px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 79% !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 85% !important;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2000px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 82% !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 87% !important;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2000px) {
+  .dashboardclose {
+    margin-left: 280px !important;
+    width: 82% !important;
+  }
+  .dashboardbg {
+    margin-left: 180px !important;
+    width: 87% !important;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2500px) {
+  .dashboardbg {
+    width: 90%;
+  }
+  .dashboardclose {
+    width: 86%;
+  }
+}
